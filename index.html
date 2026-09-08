@@ -1,46 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>King Alpha ALL IN ONE REAL</title>
-<meta name="theme-color" content="#25D366">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#000;color:#fff;font-family:system-ui;overflow:hidden}
-.page{position:fixed;inset:0;background:#000;display:none;flex-direction:column;overflow:auto}
-.page.active{display:flex}
-.center{padding:18px;flex:1;display:flex;flex-direction:column;justify-content:center}
-.logo{width:76px;height:76px;background:linear-gradient(135deg,#d4af37,#f5d76e);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:38px;margin:0 auto 16px;color:#000;font-weight:900}
-.input{width:100%;padding:13px;border-radius:12px;background:#1a1a1a;border:1px solid #333;color:#fff;margin:7px 0;font-size:15px}
-.btn{width:100%;padding:13px;background:#25D366;color:#000;border:0;border-radius:12px;font-weight:900;margin-top:8px}
-.btnGold{background:linear-gradient(90deg,#d4af37,#f5d76e)}
-.picWrap{width:100px;height:100px;border-radius:50%;background:#222;border:3px dashed #25D366;margin:14px auto;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
-.picWrap img{width:100%;height:100%;object-fit:cover}
-.feed{position:fixed;top:50px;bottom:70px;left:0;right:0;overflow:auto;display:none;background:#000}
-.feed.active{display:block}
-.card{background:#141414;border-radius:14px;padding:12px;margin:10px;border:1px solid #222}
-.top{position:fixed;top:0;left:0;right:0;height:50px;background:#0a0a0a;border-bottom:1px solid #222;display:none;align-items:center;gap:10px;padding:0 10px;z-index:50}
-.top.active{display:flex}
-.tabs{position:fixed;bottom:0;left:0;right:0;background:#000;border-top:2px solid #25D366;display:none;justify-content:space-around;padding:8px 0 18px;z-index:100}
-.tab{flex:1;text-align:center;color:#666;font-size:10px}
-.tab.active{color:#25D366}
-.tab i{font-style:normal;font-size:22px;display:block}
-.ava{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#d4af37,#8a6d1b);display:flex;align-items:center;justify-content:center;font-weight:900;color:#000;overflow:hidden}
-.bubble{max-width:76%;padding:9px 13px;border-radius:18px;font-size:14px;margin:3px 10px}
-.me{align-self:flex-end;background:#25D366;color:#000}
-.them{align-self:flex-start;background:#222}
-.emojiBar{display:flex;gap:6px;overflow:auto;padding:6px 0}
-.emojiBar span{background:#222;padding:6px 10px;border-radius:20px;font-size:16px}
-.followBtn{padding:5px 14px;border-radius:20px;border:0;font-weight:900;font-size:12px}
-.followBtn.following{background:#222;color:#fff;border:1px solid #444}
-.followBtn.not{background:#25D366;color:#000}
-</style>
-</head>
-<body>
-
-<div class="page active" id="reg">
-<div class="center">
-<div class="logo">👑</div>
-<h2 style="text-align:center">King Alpha ALL IN ONE</h2>
-<p style="text-align 
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>King Alpha 26</title><style>body{background:#000;color:#fff;font-family:Arial;margin:0}input,textarea{width:100%;padding:14px;background:#222;border:1px solid #444;color:#fff;border-radius:10px;margin:8px 0}button{width:100%;padding:14px;background:#25D366;border:0;border-radius:10px;font-weight:900}#app{display:none}.top{height:50px;background:#111;display:flex;align-items:center;padding:0 12px;position:fixed;top:0;left:0;right:0}.feed{padding:60px 10px 80px 10px}.card{background:#1a1a1a;border:1px solid #333;border-radius:12px;padding:12px;margin:10px 0}.tabs{position:fixed;bottom:0;left:0;right:0;display:flex;background:#000;border-top:2px solid #25D366}.t{flex:1;padding:10px;text-align:center;color:#666}.t.on{color:#25D366}video{width:100%;border-radius:12px}</style></head><body>
+<div id="reg" style="padding:20px;text-align:center"><div style="width:80px;height:80px;background:gold;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:40px;margin:20px auto">👑</div><h2>King Alpha ALL IN ONE</h2><p style="color:#888;font-size:11px;margin:10px">TikTok + Facebook + Comments + Likes + Follow + Emojis + Gifts</p><input id="ph" placeholder="Phone 0713992400"><input id="nm" placeholder="Name"><input id="bio" placeholder="Bio"><button style="background:gold;margin-top:10px" onclick="enterApp()">👑 ENTER APP</button></div>
+<div id="app"><div class="top"><b id="n1">King</b><span id="bal" style="margin-left:auto">R0.00</span></div>
+<div id="home" class="feed"><div class="card"><b>🎬 POST VIDEO REAL</b><label style="background:#25D366;color:#000;padding:12px;border-radius:10px;display:block;text-align:center;margin-top:10px;font-weight:900"><input type="file" id="vf" accept="video/*" style="display:none">📹 POST VIDEO</label><div id="vlist"></div></div><div class="card"><b>📝 POST FACEBOOK</b><textarea id="ft" placeholder="What's up? 😊❤️🔥"></textarea><button onclick="postFB()">POST</button><div id="flist"></div></div></div>
+<div id="tik" class="feed" style="display:none"><div id="vfull"></div></div>
+<div id="wallet" class="feed" style="display:none"><div class="card"><b>💰 Wallet</b><div id="b2" style="font-size:24px;color:#25D366">R0.00</div><button style="background:gold" onclick="ad()">📺 +R0.10 Ad</button><button onclick="gift()">🎁 +R2 Gift</button></div></div>
+<div class="tabs"><div class="t on" onclick="tab('home',this)">Home</div><div class="t" onclick="tab('tik',this)">TikTok</div><div class="t" onclick="tab('wallet',this)">Wallet</div></div></div>
+<div id="cm" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none"><div style="background:#222;position:fixed;bottom:0;left:0;right:0;border-radius:20px 20px 0 0;padding:15px"><div style="display:flex;justify-content:space-between"><b>Comments Likes Follow</b><button onclick="cm.style.display='none'" style="width:30px">X</button></div><div id="clist" style="margin:10px 0"></div><div style="display:flex;gap:8px"><input id="cinput" placeholder="Comment 😊❤️🔥"><button onclick="addC()" style="width:60px">➤</button></div></div></div>
+<script>
+let posts=JSON.parse(localStorage.getItem('k26_posts')||'[]'),fposts=JSON.parse(localStorage.getItem('k26_fb')||'[]'),bal=parseFloat(localStorage.getItem('k26_bal')||'-20'),cur=null,ctype=null,user=JSON.parse(localStorage.getItem('k26')||'null')
+if(user){reg.style.display='none';app.style.display='block';n1.textContent=user.name}
+function enterApp(){if(ph.value.length<5){alert('Phone');return}user={name:nm.value||'King',phone:ph.value};localStorage.setItem('k26',JSON.stringify(user));reg.style.display='none';app.style.display='block';n1.textContent=user.name;upd()}
+function tab(id,el){document.querySelectorAll('.feed').forEach(e=>e.style.display='none');document.getElementById(id).style.display='block';document.querySelectorAll('.t').forEach(e=>e.classList.remove('on'));el.classList.add('on');if(id=='tik')renderVFull()}
+function upd(){balEl=document.getElementById('bal');balEl.textContent='R'+bal.toFixed(2);b2.textContent='R'+bal.toFixed(2);localStorage.setItem('k26_bal',bal)}
+function ad(){bal+=0.1;upd();alert('+R0.10')}
+function gift(){bal+=2;upd();alert('+R2')}
+vf.addEventListener('change',e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=ev=>{posts.unshift({id:Date.now(),video:ev.target.result,name:user.name,likes:0,comments:[],liked:false});localStorage.setItem('k26_posts',JSON.stringify(posts));bal+=0.1;upd();renderV()};r.readAsDataURL(f)})
+function vhtml(p){return `<div class=card><b>${p.name}</b><video src=${p.video} controls></video><div style=display:flex;gap:6px;margin-top:8px><button onclick=likeV(${p.id}) style=width:auto;padding:6px 12px;background:${p.liked?'#ff0050':'#222'};color:#fff;border-radius:20px>❤️ ${p.likes}</button><button onclick=openC(${p.id},'v') style=width:auto;padding:6px 12px;background:#222;color:#fff;border-radius:20px>💬 ${p.comments.length}</button><button onclick=gift() style=width:auto;padding:6px 12px;background:gold;border-radius:20px>🎁 R2</button><button style=width:auto;padding:6px 12px;background:#222;color:#fff;border-radius:20px>Follow 😊❤️🔥</button></div></div>`}
+function renderV(){vlist.innerHTML=posts.slice(0,3).map(p=>vhtml(p)).join('')||'<p style=color:#666;text-align:center>No videos</p>'}function renderVFull(){vfull.innerHTML=posts.map(p=>vhtml(p)).join('')||'<p style=color:#666;text-align:center>No videos</p>'}
+function likeV(id){let p=posts.find(x=>x.id==id);if(p.liked){p.likes--;p.liked=false;bal-=0.1}else{p.likes++;p.liked=true;bal+=0.1}localStorage.setItem('k26_posts',JSON.stringify(posts));upd();renderV();renderVFull()}
+function postFB(){let t=ft.value.trim();if(!t)return;fposts.unshift({id:Date.now(),text:t,name:user.name,likes:0,comments:[],liked:false});localStorage.setItem('k26_fb',JSON.stringify(fposts));ft.value='';renderF()}
+function renderF(){flist.innerHTML=fposts.map(p=>`<div class=card><b>${p.name}</b><div>${p.text}</div><div style=display:flex;gap:6px;margin-top:8px><button onclick=likeF(${p.id}) style=width:auto;padding:6px 12px;background:${p.liked?'#ff0050':'#222'};color:#fff;border-radius:20px>❤️ ${p.likes}</button><button onclick=openC(${p.id},'f') style=width:auto;padding:6px 12px;background:#222;color:#fff;border-radius:20px>💬 ${p.comments.length}</button><button style=width:auto;padding:6px 12px;background:#222;color:#fff;border-radius:20px>Follow 😊❤️🔥</button></div></div>`).join('')}
+function likeF(id){let p=fposts.find(x=>x.id==id);if(p.liked){p.likes--;p.liked=false}else{p.likes++;p.liked=true}localStorage.setItem('k26_fb',JSON.stringify(fposts));renderF()}
+function openC(id,t){cur=id;ctype=t;cm.style.display='block';showC()}function showC(){let a=ctype=='v'?posts:fposts;let p=a.find(x=>x.id==cur);clist.innerHTML=p.comments.length?p.comments.map(c=>`<div style=padding:6px 0;border-bottom:1px solid #333><b>${c.name}:</b> ${c.text}</div>`).join(''):'<p style=color:#666;text-align:center>No comments</p>'}function addC(){let t=cinput.value.trim();if(!t)return;let a=ctype=='v'?posts:fposts;let p=a.find(x=>x.id==cur);p.comments.push({name:user.name,text:t});localStorage.setItem(ctype=='v'?'k26_posts':'k26_fb',JSON.stringify(a));cinput.value='';bal+=0.02;upd();showC();renderV();renderVFull();renderF()}
+renderV();renderF();upd();
+</script></body></html>
