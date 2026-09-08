@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFD700">
+<title>KING ALPHA</title>
+<style>
+body{background:#000;color:#fff;font-family:Arial;margin:0;box-sizing:border-box}
+.top{padding:12px;display:flex;justify-content:space-between;border-bottom:1px solid #222}
+.gold{color:#FFD700;font-weight:900}
+.box{margin:12px;border:1px solid #FFD700;border-radius:15px;padding:15px;background:#111}
+input{width:100%;padding:13px;border-radius:20px;background:#2a2a2a;color:#fff;border:none;margin:6px 0;box-sizing:border-box}
+.chat{max-height:220px;overflow-y:auto;background:#000;border-radius:10px;padding:10px;margin-top:10px}
+.chat div{padding:6px 0;border-bottom:1px solid #1a1a1a;font-size:13px}
+.btn{width:100%;padding:14px;background:#FFD700;color:#000;font-weight:900;border:none;border-radius:10px;margin-top:8px}
+</style>
+</head>
+<body>
+
+<div class="top">
+<div class="gold">KING ALPHA 👑</div>
+<div class="gold" style="font-size:11px">● <span id="c">0</span> KINGS JOINED</div>
+</div>
+
+<div style="background:#FFD700;color:#000;text-align:center;padding:10px;font-weight:900;font-size:12px">
+<span id="l">50 FREE</span> left • Price: <span id="pr">FREE</span>
+</div>
+
+<div class="box">
+<h3 class="gold" style="margin:0 0 8px">Circle of Kings Chat</h3>
+<div id="ch" class="chat"></div>
+<div style="display:flex;gap:6px;margin-top:10px">
+<input id="m" placeholder="Type message...">
+<button onclick="let v=document.getElementById('m').value;if(v){let d=JSON.parse(localStorage.getItem('ch')||'[]');d.push(v);localStorage.setItem('ch',JSON.stringify(d));document.getElementById('m').value='';upd()}" style="background:#FFD700;padding:8px 14px;border-radius:20px;border:none;font-weight:900">➤</button>
+</div>
+</div>
+
+<div class="box">
+<input id="name" placeholder="Your name">
+<input id="wa" placeholder="WhatsApp 067...">
+<button class="btn" onclick="join()">JOIN NOW - <span id="pr2">FREE</span></button>
+<button class="btn" style="background:#000;color:#FFD700;border:1px solid #FFD700" onclick="alert('TO INSTALL:\n1. Tap 3 dots top right\n2. Add to Home screen')">📲 DOWNLOAD APP</button>
+</div>
+
+<script>
+let cnt=localStorage.getItem('k')||0;
+function upd(){
+document.getElementById('c').innerText=cnt
